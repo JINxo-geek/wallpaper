@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Gochi+Hand");
-body {
+/* body {
   background-color: #a39bd2;
   min-height: 70vh;
   padding: 1rem;
@@ -11,13 +11,13 @@ body {
   font-family: 'Gochi Hand', cursive;
   text-align: center;
   font-size: 130%;
-}
+} */
 
-@media only screen and (min-width: 500px) {
+/* @media only screen and (min-width: 500px) {
   body {
     min-height: 100vh;
   }
-}
+} */
 .container {
   width: 100%;
   height: auto;

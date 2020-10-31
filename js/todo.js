@@ -21,7 +21,11 @@
     const form = document.querySelector(".form"); 
     const input = form.querySelector(".form__input");
     const ul = document.querySelector(".toDoList"); 
-  
+    input.addEventListener('focus',function(){
+       //监听聚焦
+      var plan = window.prompt("请输入你的计划");
+      input.value = plan;
+    })
     // event listeners
     form.addEventListener('submit', e => {
       // prevent default behaviour - Page reload
