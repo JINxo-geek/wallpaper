@@ -75,7 +75,7 @@ a {
 }
 
 a:active, a:hover {
-    color: #000;
+    /* color: #000; */
     outline-width: 0;
     text-decoration: none;
 }
@@ -135,7 +135,7 @@ h1 {
 
 h2 {
     margin-bottom: .2em;
-    color: #000;
+    /* color: #000; */
     font-weight: 700;
 }
 
