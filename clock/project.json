@@ -1,0 +1,144 @@
+{
+	"description" : "高度自定义的时钟桌面壁纸。\n- 可调节时钟位置\n- 可更换背景色。（纯色模式）\n- 可更换背景图片。（单图模式）\n- 可使用背景图目录随机切换，可设置切换间隔。（目录随机模式）\n- 所有设置关闭后保存，下次启动自动恢复。\n- （新）有四种时间格式可选啦。\n- （新）单击时钟可校准时间。\n\nYou can get the En version at:\nsteamcommunity. com/sharedfiles/filedetails/?id=835796179\n(remove the space)",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"_customcombo" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "纯色",
+						"value" : 1
+					},
+					{
+						"label" : "单图",
+						"value" : 2
+					},
+					{
+						"label" : "目录随机",
+						"value" : 3
+					}
+				],
+				"order" : 1,
+				"text" : "模式",
+				"type" : "combo",
+				"value" : 1
+			},
+			"background_1_image" : 
+			{
+				"order" : 2,
+				"text" : "背景图片",
+				"type" : "file",
+				"value" : null
+			},
+			"background_2_directory" : 
+			{
+				"mode" : "ondemand",
+				"order" : 3,
+				"text" : "背景目录",
+				"type" : "directory"
+			},
+			"background_3_duration" : 
+			{
+				"max" : 60,
+				"min" : 1,
+				"order" : 4,
+				"text" : "切换间隔",
+				"type" : "slider",
+				"value" : 10
+			},
+			"background_4_unit" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "秒",
+						"value" : 1
+					},
+					{
+						"label" : "分钟",
+						"value" : 60
+					},
+					{
+						"label" : "小时",
+						"value" : 3600
+					}
+				],
+				"order" : 5,
+				"text" : "时间单位",
+				"type" : "combo",
+				"value" : 1
+			},
+			"clockFace" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "24HH:MM:SS",
+						"value" : "TwentyFourHourClock 1"
+					},
+					{
+						"label" : "12HH:MM:SS",
+						"value" : "TwelveHourClock 1"
+					},
+					{
+						"label" : "24HH:MM",
+						"value" : "TwentyFourHourClock 0"
+					},
+					{
+						"label" : "12HH:MM",
+						"value" : "TwelveHourClock 0"
+					}
+				],
+				"order" : 8,
+				"text" : "时钟",
+				"type" : "combo",
+				"value" : "TwentyFourHourClock 1"
+			},
+			"opacity" : 
+			{
+				"max" : 100,
+				"min" : 0,
+				"order" : 9,
+				"text" : "不透明度",
+				"type" : "slider",
+				"value" : 100
+			},
+			"position_x" : 
+			{
+				"max" : 100,
+				"min" : 0,
+				"order" : 6,
+				"text" : "水平位置",
+				"type" : "slider",
+				"value" : 50
+			},
+			"position_y" : 
+			{
+				"max" : 100,
+				"min" : 0,
+				"order" : 7,
+				"text" : "竖直位置",
+				"type" : "slider",
+				"value" : 50
+			},
+			"schemecolor" : 
+			{
+				"order" : 10,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.75 0.75 0.75"
+			}
+		}
+	},
+	"monetization" : false,
+	"preview" : "preview.jpg",
+	"tags" : [ "Abstract" ],
+	"title" : "Z Clock - 自定义时钟背景",
+	"type" : "web",
+	"visibility" : "public",
+	"workshopid" : 834237690
+}

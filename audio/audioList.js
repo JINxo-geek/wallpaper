@@ -16,5 +16,5 @@
 
 const myAudioList = [
 
-    "test.ogg"
+    "rain1.ogg","rain2.ogg"
 ];

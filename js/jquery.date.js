@@ -460,8 +460,8 @@
         secondColor: '255,0,0',        // 最终颜色
         isChangeBlur: false,           // 模糊颜色变换开关
         // 坐标参数
-        offsetX: 0.5,                  // X坐标偏移
-        offsetY: 0.5,                  // Y坐标偏移
+        offsetX: 89,                  // X坐标偏移
+        offsetY: 74,                  // Y坐标偏移
         isClickOffset: false,          // 鼠标坐标偏移
         // 日期参数
         isDate: true,                  // 是否显示日期
@@ -469,9 +469,9 @@
         userTimeStyle: '',             // 自定义时间显示风格
         dateStyle: 'LL dddd',          // 日期显示风格
         userDateStyle: '',             // 自定义日期显示风格
-        timeFontSize: 60,              // 时间字体大小
-        dateFontSize: 30,              // 日期字体大小
-        distance: 0,                   // 时间与日期之间距离
+        timeFontSize: 53,              // 时间字体大小
+        dateFontSize: 26,              // 日期字体大小
+        distance: 4,                   // 时间与日期之间距离
         language: 'zh_cn',             // 日期语言
         // 天气参数
         weatherProvider: 'sina',       // 天气API提供者

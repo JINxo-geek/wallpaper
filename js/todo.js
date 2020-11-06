@@ -23,7 +23,7 @@
     const ul = document.querySelector(".toDoList"); 
     input.addEventListener('focus',function(){
        //监听聚焦
-      var plan = window.prompt("请输入你的计划");
+      var plan = window.prompt("your plan");
       input.value = plan;
     })
     // event listeners
