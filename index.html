@@ -10,6 +10,9 @@
     <link href="css/font.css" rel="stylesheet" type="text/css">
     <link href="phone\dist\style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="todo2\dist\style.css">
+    <link rel="stylesheet" href="todoswitch\dist\style.css">
+
+  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/numeric-1.2.6.min.js"></script>
@@ -64,7 +67,7 @@
   </section>
 </div> -->
 
-
+<div class="todoswitch"><input type="checkbox" id="switch" /><label id="switchlabel" for="switch">Toggle</label></div>
 <div id="iphone">
   <div id="camera">
    <span></span>
@@ -223,6 +226,26 @@
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.1/jquery.jcarousel.min.js'></script>
 <script>
+var inputswitch = $('#switch');
+var jqapp = $('.app');
+console.log("jqapp",jqapp)
+inputswitch.checked=false;
+$("#iphone").hide();
+
+$('#switchlabel').click(function(e){
+//   e.stopPropagation();   
+//  e.preventDefault();     
+
+ if(inputswitch.checked==false){
+  inputswitch.checked=true;
+  console.log("变大")
+  $('.app').animate({height:"50%",top:"50%"})
+ }else{
+  inputswitch.checked = false;
+  $('.app').animate({height:"11%",top:"87%"})
+ }
+
+})
   var flag = 1;
  $('#openphone').click(function(){
    if(flag==2){

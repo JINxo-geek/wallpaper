@@ -1,37 +1,45 @@
-input[type=checkbox] {
+.todoswitch{
+  transform: perspective(500px) rotateX(0deg) rotateY(21deg) rotateZ(-8deg) scale3d(1, 1, 1);
+    top: 75%;
+    position: absolute;
+    left: 20.4%;
+}
+
+
+#switch {
   height: 0;
   width: 0;
   visibility: hidden;
 }
 
-label {
+#switchlabel {
   cursor: pointer;
   text-indent: -9999px;
-  width: 200px;
-  height: 100px;
+  width: 50px;
+  height: 30px;
   background: grey;
   display: block;
   border-radius: 100px;
   position: relative;
 }
 
-label:after {
+#switchlabel:after {
   content: '';
   position: absolute;
   top: 5px;
   left: 5px;
-  width: 90px;
-  height: 90px;
+  width: 20px;
+  height: 20px;
   background: #fff;
-  border-radius: 90px;
+  border-radius: 20px;
   transition: 0.3s;
 }
 
-input:checked + label {
+input:checked + #switchlabel {
   background: #bada55;
 }
 
-input:checked + label:after {
+input:checked + #switchlabel:after {
   left: calc(100% - 5px);
   transform: translateX(-100%);
 }

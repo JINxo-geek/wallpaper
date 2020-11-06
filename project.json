@@ -1,181 +1,7 @@
 {
-	"approved" : true,
-	"contentrating" : "Everyone",
-	"description" : "none",
 	"file" : "index.html",
 	"general" : 
 	{
-		"properties" : 
-		{
-			"MENU_mode" : 
-			{
-				"options" : 
-				[
-					{
-						"label" : "全部&ensp;/&ensp;All",
-						"value" : 1
-					},
-					{
-						"label" : "背景&ensp;/&ensp;Background",
-						"value" : 2
-					},
-					{
-						"label" : "圆环&ensp;/&ensp;Ring",
-						"value" : 3
-					},
-					{
-						"label" : "条形&ensp;/&ensp;Bars",
-						"value" : 4
-					},
-					{
-						"label" : "标志&ensp;/&ensp;Logo",
-						"value" : 5
-					},
-					{
-						"label" : "日期&ensp;/&ensp;Date",
-						"value" : 6
-					},
-					{
-						"label" : "粒子&ensp;/&ensp;Particles",
-						"value" : 7
-					},
-					{
-						"label" : "无&ensp;&ensp;&ensp;/&ensp;None",
-						"value" : 8
-					}
-				],
-				"order" : 101,
-				"text" : "ui_MENU_mode",
-				"type" : "combo",
-				"value" : 1
-			},	
-
-			"about_QRcodeText" : 
-			{
-				"condition" : "about_isAbout.value && about_isQRcode.value",
-				"order" : 90009,
-				"text" : "<br/><img src='https://steamuserimages-a.akamaihd.net/ugc/1693877728804056978/13860C93191383EC6E05CF5F22A8EB4D13834912/' alt='网络问题' width='250' height='250' />",
-				"type" : "text "
-			},
-			"about_authorText" : 
-			{
-				"condition" : "about_isAbout.value",
-				"order" : 90001,
-				"text" : "ui_about_authorText",
-				"type" : "text"
-			},
-			"about_describeText" : 
-			{
-				"condition" : "about_isAbout.value",
-				"order" : 90006,
-				"text" : "ui_about_describeText",
-				"type" : "text"
-			},
-			// "about_emailText" : 
-			// {
-			// 	"condition" : "about_isAbout.value",
-			// 	"order" : 90003,
-			// 	"text" : "ui_about_emailText",
-			// 	"type" : "text"
-			// },
-			"about_isAbout" : 
-			{
-				"order" : 90000,
-				"text" : "ui_about_isAbout",
-				"type" : "bool",
-				"value" : false
-			},
-			"about_isQRcode" : 
-			{
-				"condition" : "about_isAbout.value",
-				"order" : 90007,
-				"text" : "ui_about_isQRcode",
-				"type" : "bool",
-				"value" : false
-			},
-			"about_kunxiText" : 
-			{
-				"condition" : "about_isAbout.value && !about_isQRcode.value",
-				"order" : 90008,
-				"text" : "<br/><img src='https://steamuserimages-a.akamaihd.net/ugc/858355614970362859/B1B750CD8CF6A0EDFEABE31B0D0B3E258E3212B4/' alt='昆西昆西昆~Quincy 0v0' width='250' height='250' />",
-				"type" : "text"
-			},
-			// "about_qqText" : 
-			// {
-			// 	"condition" : "about_isAbout.value",
-			// 	"order" : 90002,
-			// 	"text" : "ui_about_qqText",
-			// 	"type" : "text"
-			// },
-			"about_updateText" : 
-			{
-				"condition" : "about_isAbout.value",
-				"order" : 90005,
-				"text" : "ui_about_updateText",
-				"type" : "text"
-			},
-			"about_versionText" : 
-			{
-				"condition" : "about_isAbout.value",
-				"order" : 90004,
-				"text" : "ui_about_versionText",
-				"type" : "text"
-			},
-			"slider_mode" : 
-			{
-				"condition" : "MENU_mode.value == 1 || MENU_mode.value == 2",
-				"options" : 
-				[
-					// {
-					// 	"label" : "颜色&ensp;&ensp;&ensp;/&ensp;Color",
-					// 	"value" : 1
-					// },
-					// {
-					// 	"label" : "壁纸&ensp;&ensp;&ensp;/&ensp;Wallpaper",
-					// 	"value" : 2
-					// },
-					// {
-					// 	"label" : "幻灯片&ensp;/&ensp;Slides",
-					// 	"value" : 3
-					// },
-					{
-						"label" : "视频&ensp;&ensp;&ensp;/&ensp;Video",
-						"value" : 4
-					}
-				],
-				"order" : 1001,
-				"text" : "ui_slider_mode",
-				"type" : "combo",
-				"value" : 4
-			},	
-			"circle_isRing" : 
-			{
-				"condition" : "(MENU_mode.value == 1 || MENU_mode.value == 3) && circle_colorMode.value != 3",
-				"order" : 3002,
-				"text" : "ui_circle_isRing",
-				"type" : "text",
-				"value" : false
-			},			
-			"circle_isBall" : 
-			{
-				"condition" : "MENU_mode.value == 1 || MENU_mode.value == 3",
-				"order" : 3301,
-				"text" : "ui_circle_isBall",
-				"type" : "text",
-				"value" : false
-			},			
-			"date_isDate" : 
-			{
-				"condition" : "MENU_mode.value == 1 || MENU_mode.value == 6",
-				"order" : 6002,
-				"text" : "ui_date_isDate",
-				"type" : "bool",
-				"value" : false
-			},
-
-
-		},
-		"supportsaudioprocessing" : true,
 		"localization" : 
 		{
 			"en-us" : 
@@ -1794,15 +1620,158 @@
 				"ui_slider_wallpaper_fillStyle" : "<br/>背景填充方式<br/><br/>",
 				"ui_slider_width" : "<br/>寬度(%)<br/><br/>"
 			}
-		}
-
+		},
+		"properties" : 
+		{
+			"MENU_mode" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "全部&ensp;/&ensp;All",
+						"value" : 1
+					},
+					{
+						"label" : "背景&ensp;/&ensp;Background",
+						"value" : 2
+					},
+					{
+						"label" : "圆环&ensp;/&ensp;Ring",
+						"value" : 3
+					},
+					{
+						"label" : "条形&ensp;/&ensp;Bars",
+						"value" : 4
+					},
+					{
+						"label" : "标志&ensp;/&ensp;Logo",
+						"value" : 5
+					},
+					{
+						"label" : "日期&ensp;/&ensp;Date",
+						"value" : 6
+					},
+					{
+						"label" : "粒子&ensp;/&ensp;Particles",
+						"value" : 7
+					},
+					{
+						"label" : "无&ensp;&ensp;&ensp;/&ensp;None",
+						"value" : 8
+					}
+				],
+				"order" : 101,
+				"text" : "ui_MENU_mode",
+				"type" : "combo",
+				"value" : 1
+			},
+			"about_QRcodeText" : 
+			{
+				"condition" : "about_isAbout.value && about_isQRcode.value",
+				"order" : 90009,
+				"text" : "<br/><img src='https://steamuserimages-a.akamaihd.net/ugc/1693877728804056978/13860C93191383EC6E05CF5F22A8EB4D13834912/' alt='网络问题' width='250' height='250' />",
+				"type" : "text "
+			},
+			"about_authorText" : 
+			{
+				"condition" : "about_isAbout.value",
+				"order" : 90001,
+				"text" : "ui_about_authorText",
+				"type" : "text"
+			},
+			"about_describeText" : 
+			{
+				"condition" : "about_isAbout.value",
+				"order" : 90006,
+				"text" : "ui_about_describeText",
+				"type" : "text"
+			},
+			"about_isAbout" : 
+			{
+				"order" : 90000,
+				"text" : "ui_about_isAbout",
+				"type" : "bool",
+				"value" : false
+			},
+			"about_isQRcode" : 
+			{
+				"condition" : "about_isAbout.value",
+				"order" : 90007,
+				"text" : "ui_about_isQRcode",
+				"type" : "bool",
+				"value" : false
+			},
+			"about_kunxiText" : 
+			{
+				"condition" : "about_isAbout.value && !about_isQRcode.value",
+				"order" : 90008,
+				"text" : "<br/><img src='https://steamuserimages-a.akamaihd.net/ugc/858355614970362859/B1B750CD8CF6A0EDFEABE31B0D0B3E258E3212B4/' alt='昆西昆西昆~Quincy 0v0' width='250' height='250' />",
+				"type" : "text"
+			},
+			"about_updateText" : 
+			{
+				"condition" : "about_isAbout.value",
+				"order" : 90005,
+				"text" : "ui_about_updateText",
+				"type" : "text"
+			},
+			"about_versionText" : 
+			{
+				"condition" : "about_isAbout.value",
+				"order" : 90004,
+				"text" : "ui_about_versionText",
+				"type" : "text"
+			},
+			"circle_isBall" : 
+			{
+				"condition" : "MENU_mode.value == 1 || MENU_mode.value == 3",
+				"order" : 3301,
+				"text" : "ui_circle_isBall",
+				"type" : "text",
+				"value" : false
+			},
+			"circle_isRing" : 
+			{
+				"condition" : "(MENU_mode.value == 1 || MENU_mode.value == 3) && circle_colorMode.value != 3",
+				"order" : 3002,
+				"text" : "ui_circle_isRing",
+				"type" : "text",
+				"value" : false
+			},
+			"date_isDate" : 
+			{
+				"condition" : "MENU_mode.value == 1 || MENU_mode.value == 6",
+				"order" : 6002,
+				"text" : "ui_date_isDate",
+				"type" : "bool",
+				"value" : false
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"slider_mode" : 
+			{
+				"condition" : "MENU_mode.value == 1 || MENU_mode.value == 2",
+				"options" : 
+				[
+					{
+						"label" : "视频&ensp;&ensp;&ensp;/&ensp;Video",
+						"value" : 4
+					}
+				],
+				"order" : 1001,
+				"text" : "ui_slider_mode",
+				"type" : "combo",
+				"value" : 4
+			}
+		},
+		"supportsaudioprocessing" : true
 	},
-	"preview" : "preview.jpg",
-	"tags" : [ "Relaxing" ],
-	"title" : "Demo",
+	"title" : "[JINxo]girl_phone_todo_1.0",
 	"type" : "web",
 	"version" : 0,
-	"visibility" : "public",
-	"workshopid" : 921617616,
-	"workshopurl" : "steam://url/CommunityFilePage/921617616"
 }
