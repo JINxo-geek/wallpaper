@@ -4,7 +4,7 @@
   left: 6%;
   top: 44%;
 }
-#app {
+#musicapp {
   transform: perspective(500px) rotateX(4deg) rotateY(0deg) rotateZ(-7deg) scale3d(1, 1, 1);
   display: table-cell;
   vertical-align: middle;
@@ -27,7 +27,7 @@
     top: 71%;
     left: 20.4%;
 }
-#app:hover {
+#musicapp:hover {
   background: #e43725;
   background: -webkit-linear-gradient(top, #e43725, #bf2718);
   background: linear-gradient(to bottom, #e43725, #bf2718);
@@ -40,7 +40,7 @@
   white-space: nowrap;
 } */
 
-#app .svg {
+#musicapp .svg {
   height: 20px;
   width: 20px;
 }

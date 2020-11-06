@@ -26,7 +26,7 @@ $(document).ready(function () {
 			title: "cyberpunk rain",
 			artist: "JINxo",
 			cover: "img/3.png",
-			audioFile: "audio/rain3.m4a",
+			audioFile: "audio/rain3.ogg",
 			color: "#25323b"
 		}
 	];
