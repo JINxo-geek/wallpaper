@@ -4,7 +4,9 @@ class Todo {
     data = [],
     onAdded = () => {},
     onDeleted = () => {},
-    onStatusChanged = () => {} } =
+    onStatusChanged = () => {},
+    onFocus = ()=>{}
+  } =
   {}) {
     this.nodes = {};
     this.title = title;
@@ -15,10 +17,11 @@ class Todo {
     this.deleteTask = this.deleteTask.bind(this);
     this.toggleStatus = this.toggleStatus.bind(this);
     this.filterData = this.filterData.bind(this);
+    this.onInput = this.onInput.bind(this);
     this.onAdded = onAdded;
     this.onDeleted = onDeleted;
     this.onStatusChanged = onStatusChanged;
-
+    this.onFocus = onFocus;
     this.filterTypes = [
     {
       name: "All",
@@ -51,6 +54,7 @@ class Todo {
 
   elementCreator(options) {
     const config = { ...this.elementDefaults, ...options };
+    console.log('config',config)
     const elementNode = document.createElement(config.type);
 
     Object.keys(config.attributes).forEach(a => {
@@ -96,6 +100,9 @@ class Todo {
 
   }
 
+
+
+
   addTask({
     id = new Date().getUTCMilliseconds(),
     name = `New task #${new Date().getUTCMilliseconds()}`,
@@ -112,6 +119,20 @@ class Todo {
     this.updateCount();
     this.filterData();
   }
+
+  onInput(e){
+    var input = document.querySelector(".task-input");
+    var that = this;
+    input.addEventListener('focus',function(){
+       //监听聚焦
+       console.log('聚焦',this)
+      var plan = window.prompt(this);
+      this.blur();
+      this.value = plan; 
+    that.addTask();
+    })
+  }
+
 
   filterData(e, param = null, value = null) {
     const attrParam = e ? e.target.getAttribute("data-param") : null;
@@ -226,16 +247,18 @@ class Todo {
   }
 
   formUI() {
+    //创建输入框
     this.nodes.input = this.elementCreator({
       type: "input",
       attributes: {
         class: "task-input",
         placeholder: "Add a new task...",
-        autofocus: "true" },
+        // autofocus: "false" 
+      },
 
       container: this.nodes.form });
 
-
+    //创建添加按钮
     this.nodes.button = this.elementCreator({
       type: "button",
       markup: "Add Task",
@@ -268,6 +291,7 @@ class Todo {
 
     });
   }
+//更新UI
 
   listUI(data = this.data) {
     this.nodes.list.innerHTML = "";
@@ -326,6 +350,8 @@ class Todo {
   init() {
     this.generalUI();
     this.formUI();
+    //监听Input
+    this.onInput();
     this.listUI();
     this.filterUI();
   }}
@@ -334,28 +360,10 @@ class Todo {
 const todoList = [
 {
   id: -1,
-  name: "Morning walk",
+  name: "你好,我是JINxo,欢迎使用这款壁纸",
   completed: true },
 
-{
-  id: -2,
-  name: "Meeting with Holden Caulfield",
-  completed: true },
-
-{
-  id: -3,
-  name: "Call Alper Kamu",
-  completed: false },
-
-{
-  id: -4,
-  name: "Book flight to Hungary",
-  completed: false },
-
-{
-  id: -5,
-  name: "Blog about CSS box model",
-  completed: true }];
+];
 
 
 
@@ -370,20 +378,15 @@ TodoApp.init();
 TodoApp.onAdded = task => console.log("Added", task);
 TodoApp.onDeleted = id => console.log("Deleted, id: ", id);
 TodoApp.onStatusChanged = id => console.log("Status changed, id:", id);
-const input = form.querySelector(".task-input");
-input.addEventListener('focus',function(){ //监听聚焦
- console.log('监听',input)
-  var plan = window.prompt("your plan");
- input.value = plan;
-})
-// Add Task
-TodoApp.addTask({ id: -6 });
 
-// Delete Task
-TodoApp.deleteTask(null, -6);
+// // Add Task
+// TodoApp.addTask({ id: -6 });
 
-// Toggle Status
-TodoApp.toggleStatus(null, -5);
+// // Delete Task
+// TodoApp.deleteTask(null, -6);
+
+// // Toggle Status
+// TodoApp.toggleStatus(null, -5);
 
 // Filter Data
 // TodoApp.filterData(null, "completed", "true");

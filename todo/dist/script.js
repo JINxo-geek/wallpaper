@@ -1,3 +1,18 @@
+/*!
+ * 静态调试区域
+ * project:
+ * - https://github.com/Alice-Jie/AudioVisualizer
+ * - https://gitee.com/Alice_Jie/circleaudiovisualizer
+ * - http://steamcommunity.com/sharedfiles/filedetails/?id=921617616
+ * @license MIT licensed
+ * @author Alice
+ * @date 2017/07/28
+ */
+
+(function ($, window, document, Math) {
+
+  'use strict';
+
 // IEFE
 (() => { 
   // state variables
@@ -6,7 +21,11 @@
   const form = document.querySelector(".form"); 
   const input = form.querySelector(".form__input");
   const ul = document.querySelector(".toDoList"); 
-
+  input.addEventListener('focus',function(){
+     //监听聚焦
+    var plan = window.prompt("your plan");
+    input.value = plan;
+  })
   // event listeners
   form.addEventListener('submit', e => {
     // prevent default behaviour - Page reload
@@ -61,3 +80,7 @@
   }
   
 })();
+
+  //--------------------------------------------------------------------------------------------------------------
+
+})(jQuery, window, document, Math);
