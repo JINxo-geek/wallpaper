@@ -22,7 +22,7 @@
 
     // 背景/幻灯片/视频配置
     let slider = {
-        mode: 'wallpaper',            // 背景模式
+        mode: 'video',            // 背景模式
         isLinearGradient: false,      // 线性开关
         Color: '255,255,255',         // 背景颜色
         GradientDeg: 120,             // 线性角度
@@ -1024,18 +1024,22 @@
 
     window.wallpaperRegisterAudioListener && window.wallpaperRegisterAudioListener(wallpaperAudioListener);
 
+   //客制化定制
+    wallpaper.slider('set', 'sliderMode', 'video');
+    wallpaper.visualizerCircle('set', 'isBall', false);
+    wallpaper.visualizerCircle('set', 'isRing', false);
+    wallpaper.time('set', 'isDate', false);
     // wallpaper参数监视器
     //--------------------------------------------------------------------------------------------------------------
 
     window.wallpaperPropertyListener = {
-
         /**
          * 从wallpaper接收属性值
          *
          * @param {*} properties 属性名
          */
         applyUserProperties: function (properties) {
-
+console.log('wallpaperPropertyListener properties',properties)
             /**
              * 壁纸初始化时wallpaper默认遍历运行参数一遍。
              * 初始遍历参数顺序很重要。

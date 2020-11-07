@@ -1014,8 +1014,9 @@
      */
     let Slider = function (el, options) {
         this.$el = $(el);
-
+        console.log('options',options);
         this.sliderMode = options.sliderMode;              // 背景模式
+        console.log('背景模式',this.sliderMode)
         this.isLinearGradient = options.isLinearGradient;  // 线性背景开关
         // 幻灯片参数
         this.sliderStyle = options.sliderStyle;            // 背景切换模式

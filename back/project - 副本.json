@@ -1,6 +1,4 @@
 {
-	"contentrating" : "Everyone",
-	"description" : "sda",
 	"file" : "index.html",
 	"general" : 
 	{
@@ -1773,12 +1771,7 @@
 		},
 		"supportsaudioprocessing" : true
 	},
-	"preview" : "preview.gif",
-	"tags" : [ "Unspecified" ],
-	"title" : "todo_music[by JINxo][v1.1]",
+	"title" : "[JINxo]girl_phone_todo_1.0",
 	"type" : "web",
-	"version" : 3,
-	"visibility" : "public",
-	"workshopid" : "2278783915",
-	"workshopurl" : "steam://url/CommunityFilePage/2278783915"
+	"version" : 0,
 }
