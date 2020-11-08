@@ -1,6 +1,6 @@
 {
 	"contentrating" : "Everyone",
-	"description" : "sda",
+	"description" : "有问题可以到b站搜我id:不hack不叫JINxo,私信我反馈、",
 	"file" : "index.html",
 	"general" : 
 	{
@@ -839,8 +839,8 @@
 				"ui_about_isAbout" : "<h3><b>关于壁纸</b></h3><span>不hack不叫JINxo</span>",
 				"ui_about_isQRcode" : "<br/>显示我的bilibili主页二维码<br/><br/>",
 				"ui_about_qqText" : "<br/>QQ：527382125<br/>",
-				"ui_about_updateText" : "<br/><span>更新说明：</span><br/><span>1.播放音乐2.todo清单</span><br/>",
-				"ui_about_versionText" : "<br/>版本号：1.0<br/>",
+				"ui_about_updateText" : "<br/><span>更新说明：</span><br/><span>1.修复了国内网络无法加载播放器按钮的问题</span><br/>",
+				"ui_about_versionText" : "<br/>版本号：1.2<br/>",
 				"ui_audioData_AudioText" : "<h3><b>音频设置</b></h3><h6>设置音频相关的参数，影响音频圆环和音频条形。</h6>",
 				"ui_audioData_amplitude" : "<br/>音频振幅<br/><br/>",
 				"ui_audioData_decline" : "<br/>音频衰弱<br/><br/>",
@@ -1774,10 +1774,10 @@
 		"supportsaudioprocessing" : true
 	},
 	"preview" : "preview.gif",
-	"tags" : [ "Unspecified" ],
-	"title" : "todo_music[by JINxo][v1.1]",
+	"tags" : [ "Girls" ],
+	"title" : "todo_music[by JINxo][v1.1.1]",
 	"type" : "web",
-	"version" : 3,
+	"version" : 4,
 	"visibility" : "public",
 	"workshopid" : "2278783915",
 	"workshopurl" : "steam://url/CommunityFilePage/2278783915"
